@@ -1,0 +1,7 @@
+/target/
+/.idea/
+
+#especificos para el proyecto de eclipse
+.project
+.classpath
+.settings/
