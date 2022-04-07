@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>uy.org.curso</groupId>
-  <artifactId>practico_02_beanvalidation</artifactId>
+  <artifactId>beanvalidation_basico</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
   <name>practico_02_beanvalidation</name>
@@ -16,47 +16,26 @@
   
   <dependencies>
 
-	  <!-- Hibernate validator -->
-	  <dependency>
-		  <groupId>org.hibernate</groupId>
-		  <artifactId>hibernate-validator</artifactId>
-		  <version>5.1.2.Final</version>
-	  </dependency>
-
-	  <!-- CDI weld -->
-	  <dependency>
-		  <groupId>org.jboss.weld.se</groupId>
-		  <artifactId>weld-se</artifactId>
-		  <version>2.3.2.Final</version>
-	  </dependency>
-
-	  <!-- Expresion Language -->
-	  <dependency>
-		  <groupId>org.glassfish</groupId>
-		  <artifactId>javax.el</artifactId>
-		  <version>3.0.1-b03</version>
-	  </dependency>
-
-	  <!-- Junit test -->
-	  <dependency>
-		  <groupId>junit</groupId>
-		  <artifactId>junit</artifactId>
-		  <version>4.11</version>
-	  </dependency>
-
-	  <!-- API, java.xml.bind module -->
-	  <dependency>
-		  <groupId>jakarta.xml.bind</groupId>
-		  <artifactId>jakarta.xml.bind-api</artifactId>
-		  <version>2.3.2</version>
-	  </dependency>
-
-	  <!-- Runtime, com.sun.xml.bind module -->
-	  <dependency>
-		  <groupId>org.glassfish.jaxb</groupId>
-		  <artifactId>jaxb-runtime</artifactId>
-		  <version>2.3.2</version>
-	  </dependency> 
+	<!--  Especificacion de bean validation - JSR-380 -->
+	<dependency>
+    	<groupId>javax.validation</groupId>
+    	<artifactId>validation-api</artifactId>
+    	<version>2.0.1.Final</version>
+	</dependency>
+	
+	<!--  Implementacion por defecto de bean validation -->
+	<dependency>
+    	<groupId>org.hibernate.validator</groupId>
+    	<artifactId>hibernate-validator</artifactId>
+    	<version>6.0.13.Final</version>
+	</dependency>
+	
+	<!--  Interpolation message en los mensajes de error de las validaciones -->
+	<dependency>
+    	<groupId>org.glassfish</groupId>
+    	<artifactId>javax.el</artifactId>
+    	<version>3.0.0</version>
+	</dependency>
      	
   </dependencies>
 
